@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded"),
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener("click", function (botao) {
         const abaAlvo = botao.target.dataset.tabButton;
-        const aba = document.querySelector("[data-tab-id=${abaAlvo}]");
+        const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
         escondeTodasAbas();
         aba.classList.add("shows__list--is-active");
         removeBotaoAtivo();
